@@ -9,11 +9,12 @@ class Program
         double[] y = { 0.04879, 0.058269, 0.067659, 0.076961, 0.086178, 0.09531, 0.10436 };
 
       
-        double valueToInterpolate = 1.083;
+        double valueToInterpolate = 1.065;
 
        
         double result = NewtonInterpolation(x, y, valueToInterpolate);
         Console.WriteLine($"Интерполированное значение в x = {valueToInterpolate}: y = {result}");
+        Console.ReadLine();
     }
 
     static double NewtonInterpolation(double[] x, double[] y, double value)
@@ -47,4 +48,5 @@ class Program
 
         return interpolatedValue;
     }
+
 }

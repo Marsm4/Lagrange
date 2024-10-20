@@ -41,5 +41,7 @@ class Program
         double interpolatedValue = Lagrange(x, y, xValue);
 
         Console.WriteLine($"Значение многочлена Лагранжа в точке {xValue}: {interpolatedValue}");
+        Console.ReadLine();
     }
+    
 }
